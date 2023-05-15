@@ -1,0 +1,35 @@
+package principal;
+
+import java.util.Scanner;
+
+public class atividadeDois {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner leia = new Scanner (System.in);
+		
+		int salario;
+		int salario2;
+		int desconto = 0;
+		int desco1 = desconto / 100;
+		int desco2 = desconto / 100;
+		
+		
+		System.out.println("Qual é o seu salário?");
+		salario = leia. nextInt();
+		
+	    System.out.println(" Qual o desconto do Inss: ");
+	    desconto = leia.nextInt();
+		
+		desco1 = (desconto * salario) / 100;
+		System.out.println("Com o desconto do inss o salário fica: " + (salario - desco1));
+		salario2 = leia.nextInt();
+		desco2 = (desco2 * salario2) / 100;
+		System.out.println("O salario liquido do funcionário é de " + (salario2 - desco2));
+		
+		leia.close();
+
+	}
+
+}

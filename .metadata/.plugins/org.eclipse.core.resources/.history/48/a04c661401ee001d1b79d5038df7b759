@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+public class ExercicioTres {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner leia = new Scanner (System.in);
+		int matematica = 7;
+		int portugues = 8;
+		int geografia = 6;
+		int ingles = 9;
+		
+		System.out.println("Qual a nota do aluno em Matemática no bimestre: ");
+		matematica = leia.nextInt(7);
+		
+		System.out.println("Qual a nota do aluno em" + portugues + "no bimestre: ");
+		portugues = leia.nextInt();	
+	}
+
+}

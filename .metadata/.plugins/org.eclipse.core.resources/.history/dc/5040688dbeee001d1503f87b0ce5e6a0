@@ -1,0 +1,30 @@
+package principal;
+
+import java.util.Scanner;
+
+public class ExercicioCinco {
+
+	private static final int F = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner leia = new Scanner (System.in);
+		
+		double tempeFH = F;
+		double tempeCelsius = 5 * ((F-32) / 9);
+		String opcao;
+		
+		double Celsius = 1;
+		double Fhzt = 1.8 + 32;
+				
+		System.out.println("Qual a temperatura em Fahrenheit?: ");
+		tempeFH = leia.nextDouble();
+		
+		System.out.println(" A temperatura em Celsius fica: ");
+				
+		leia.close();
+
+	}
+
+}
