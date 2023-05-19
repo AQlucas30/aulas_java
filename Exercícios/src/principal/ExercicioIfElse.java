@@ -22,28 +22,29 @@ public class ExercicioIfElse {
 		
 		int bonus = 0;
 		
-		int total = soma + bonus; 
+		int total = soma; 
 
 		System.out.println("Numeros de dados:" + dado1
 		+	","	+ dado2 + "," + dado3);
 		
-		System.out.println("Soma: " + soma);
+
 		
 		if (dado1 == dado2 && dado2 == dado3) {
 			System.out.println("Você é muito sortudo!!!");
-			bonus = 6;
+			soma = soma + 6;
 		}
 		else if (dado1 == dado2 || dado1 == dado3 || dado2 == dado3);
-		    bonus = 2;
+		    soma = soma + 2;
 	        
-	    if (total <= 15 ) {
+	    if (total + bonus <= 15  ) {
 	    	System.out.println("Lamneto mais você perdeu");
 	    }
-	    else if (total >= 15)
+	    else if (total + bonus >= 15) {
 	    	System.out.println("Parabens você ganhou");
+	    }
 	    	
-	    	
-	
+	    System.out.println("Soma: " + (soma + bonus));
+
 	
 	
 		
