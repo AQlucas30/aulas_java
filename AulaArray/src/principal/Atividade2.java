@@ -16,12 +16,17 @@ public class Atividade2 {
 	    int[] par = {2,4,6,8,10} ;
 	
 		
-		for (int contador = 1; numero < 10; contador++);
+		for (int contador = 1; contador <= numero.length; contador++);
 		System.out.println("Os numeros pares são: " +  par );
-		numero [i] = sc.nextInt();
+		
+		for ( int numero3 : numero) {
+			if (par - nuemero2)
+		}
+		
 		
 		
 		sc.close();
+		
 
 	}
 
