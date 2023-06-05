@@ -6,19 +6,17 @@ public class Funcionarios {
 	
 	public String nome;
 	public String cargo;
-	public int salario;
+	public double salario;
 	
-	
-	
-	public void nomeFuncionario () {
-		System.out.println("Qual o nome do funcionário? ");
+	public void verificarComissao () {
+		if (cargo.equals("gerente") && salario < 5000) {
+			salario = salario + (salario *0.015);	
 		}
-	public void qualCargo () {
-		System.out.println("Qual o seu cargo? ");
-	    }
-	public void qualSalario () {
-		System.out.println("Qual o seu salario");
-		int salario = nextInt();
+		if (cargo.equals("vendedor") && salario < 1500){
+	     salario = salario + (salario *0.02);
+		}
+		System.out.println(salario);
+		
 	}
 	
 	

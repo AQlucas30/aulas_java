@@ -13,7 +13,25 @@ public class Program {
 		
 		Funcionarios fc = new Funcionarios ();
 		
-		fc.qualCargo ();
+		
+		System.out.println("Entre com o nome: ");
+		fc.nome = sc.nextLine();
+		
+		System.out.println("Entre com o cargo: " );
+		fc.cargo = sc.nextLine();
+		
+		System.out.println("Entre com o salário: ");
+		fc.salario = sc.nextDouble();
+		
+		System.out.println("Salario: ");
+		fc.verificarComissao();
+
+		
+		
+		
+		
+		sc.close();
+		
 
 	}
 
