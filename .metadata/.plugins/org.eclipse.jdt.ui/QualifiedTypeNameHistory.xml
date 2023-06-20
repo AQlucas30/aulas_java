@@ -10,4 +10,7 @@
     <fullyQualifiedTypeName name="entities.televisor"/>
     <fullyQualifiedTypeName name="entities.Televisor"/>
     <fullyQualifiedTypeName name="entities.Funcionarios"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="entities.Pessoa1"/>
+    <fullyQualifiedTypeName name="entities.Conta"/>
 </qualifiedTypeNameHistroy>

@@ -2,8 +2,18 @@ package entities;
 
 public class Livro {
 	
+	
+	/*
+	 * ordemsugerida a seguir classe:
+	 * 1° atributos da classe
+	 * 2º construtores 
+	 * 3º metodos get e set
+	 * 4° demias metodos 
+	  
+	 
+	 */
 	 private String nome;
-	 private String titulo;
+	 private String edicao;
 	 private double valor;
 	
 	
@@ -11,7 +21,7 @@ public class Livro {
 	public Livro(String nome, String titulo, double valor) {
 		super();
 		this.nome = nome;
-		this.titulo = titulo;
+		this.edicao = titulo;
 		this.valor = valor;
 	}
 
@@ -26,13 +36,13 @@ public class Livro {
 	}
 
 
-	public String getTitulo() {
-		return titulo;
+	public String getEdicao() {
+		return edicao;
 	}
 
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setTitulo(String edicao) {
+		this.edicao = edicao;
 	}
 
 
@@ -45,7 +55,7 @@ public class Livro {
 		this.valor = valor;
 		if (valor > 100) {
 			double taxa = valor * 0.3;
-			valor += taxa;
+			this.valor += taxa;
 		}
 	}
 
@@ -53,8 +63,8 @@ public class Livro {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return  "Qual o nome do livro: " + nome + "Qual o titulo: " + titulo + "Qual o valor: " + valor;
-	}
+		return  "\nQual o nome do livro:  "  +  nome  +  "\nQual o edicao:  "  +  edicao  +  "\nQual o valor: "  +  valor;
+	} 
 	
 	
 	
